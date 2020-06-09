@@ -3,19 +3,41 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Post;
 
-class PostController extends Controller
+class PageController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function home()
     {
-        $posts = Post::join('users', 'author_id', '=', 'users.id')->orderBy('posts.created_at', 'desc')->paginate(6);
-        return view('posts.index', compact('posts'));
+
+        return view('home.index');
+    }
+
+    public function about_as()
+    {
+        return view('about_as.index');
+    }
+
+    public function teachers()
+    {
+
+        return view('teachers.index');
+    }
+
+    public function pricing()
+    {
+
+        return view('pricing.index');
+    }
+
+    public function contact()
+    {
+
+        return view('contact.index');
     }
 
     /**

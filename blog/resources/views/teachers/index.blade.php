@@ -28,10 +28,10 @@
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{asset('css/custom.css')}}">
-
+ 
     <!-- Modernizer for Portfolio -->
     <script src="{{asset('js/modernizer.js')}}"></script>
-
+ 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -173,45 +173,263 @@
 	
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>Blog<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+			<h1>Teachers<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
 		</div>
 	</div>
 	
-    <div id="overviews" class="section wb">
+	<div id="teachers" class="section wb">
         <div class="container">
-            <div class="section-title row text-center">
-                <div class="col-md-8 offset-md-2">
-                    <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p>
-                </div>
-            </div><!-- end title -->
-
-            <hr class="invis"> 
-
-            <div class="row"> 
-                @foreach ($posts as $post)
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="blog-item">
-						<div class="image-blog">
-							<img src="{{$post->img ?? asset('images/default.jpg')}}" alt="" class="img-fluid">
+            <div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-01.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="meta-info-blog">
-							<span><i class="fa fa-calendar"></i> <a href="#">{{ $post->created_at }}</a> </span>
-                            <span><i class="fa fa-tag"></i>  <a href="#">{{ $post->name }}</a> </span>
-                            <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-						</div>
-						<div class="blog-title">
-							<h2><a href="#" title="">{{ $post->short_title }}</a></h2>
-						</div>
-						<div class="blog-desc">
-							<p>{{ $post->description }}</p>
-						</div>
-						<div class="blog-button">
-							<a class="hover-btn-new orange" href="#"><span>Read More<span></a>
+						<div class="team-content">
+							<h3 class="title">Williamson</h3>
+							<span class="post">Web Developer</span>
 						</div>
 					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-02.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Kristiana</h3>
+							<span class="post">Web Designer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-03.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Steve Thomas</h3>
+							<span class="post">Web Developer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-04.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Miranda joy</h3>
+							<span class="post">Web Developer</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-01.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Williamson</h3>
+							<span class="post">Web Developer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-02.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Kristiana</h3>
+							<span class="post">Web Designer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-03.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Steve Thomas</h3>
+							<span class="post">Web Developer</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-12">
+					<div class="our-team">
+						<div class="team-img">
+							<img src="images/team-04.png">
+							<div class="social">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-skype"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3 class="title">Miranda joy</h3>
+							<span class="post">Web Developer</span>
+						</div>
+					</div>
+				</div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->	
+
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+                <p>Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>James Fernando </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jacques Philips </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h4>Venanda Mercy </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>James Fernando </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Jacques Philips </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid">
+                                <h4>Venanda Mercy </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
                 </div><!-- end col -->
-                    @endforeach
-                <div>{{ $posts->links() }}</div>
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
@@ -307,19 +525,11 @@
     </div><!-- end copyrights -->
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+  <!-- ALL JS FILES -->
+  <script src="{{asset('js/all.js')}}"></script>
+  <!-- ALL PLUGINS -->
+  <script src="{{asset('js/custom.js')}}"></script>
+  <script src="{{asset('js/timeline.min.js')}}"></script>
 
-    <!-- ALL JS FILES -->
-    <script src="{{asset('js/all.js')}}"></script>
-    <!-- ALL PLUGINS -->
-    <script src="{{asset('js/custom.js')}}"></script>
-	<script src="{{asset('js/timeline.min.js')}}"></script>
-	<script>
-		timeline(document.querySelectorAll('.timeline'), {
-			forceVerticalMode: 700,
-			mode: 'horizontal',
-			verticalStartPosition: 'left',
-			visibleItems: 4
-		});
-	</script>
 </body>
 </html>
