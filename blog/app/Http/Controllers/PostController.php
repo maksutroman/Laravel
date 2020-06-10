@@ -12,8 +12,18 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        if ($request->search) {
+            $posts = Post::join('users', "author_id", '=', 'users.id')
+                ->where('post_title', 'like', '%' . $request->search . '%')
+                ->orWhere('short_title', 'like', '%' . $request->search . '%')
+                ->orWhere('description', 'like', '%' . $request->search . '%')
+                ->orderBy('posts.created_at', 'desc')
+                ->paginate(6);
+            return view('posts.index', compact('posts'));
+        }
+
         $posts = Post::join('users', 'author_id', '=', 'users.id')->orderBy('posts.created_at', 'desc')->paginate(6);
         return view('posts.index', compact('posts'));
     }
