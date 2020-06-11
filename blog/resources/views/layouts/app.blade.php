@@ -161,6 +161,7 @@
 						<li class="nav-item"><a class="nav-link" href="/teachers">Teachers</a></li>
 						<li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
 						<li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="{{ route('post.create') }}">Add Post</a></li>
 						
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
