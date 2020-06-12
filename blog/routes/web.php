@@ -22,3 +22,4 @@ Route::get('/contact', 'PageController@contact');
 Route::get('blog/', 'PostController@index')->name('post.index');
 Route::get('create', 'PostController@create')->name('post.create');
 Route::post('post/', 'PostController@store')->name('post.store');
+Route::get('post/show/{id}', 'PostController@show')->name('post.show');
