@@ -30,7 +30,9 @@ class PostController extends Controller
                 ->with(compact('countPosts'));
         }
 
-        $posts = Post::join('users', 'author_id', '=', 'users.id')->OrderBy('posts.created_at', 'desc')->paginate(6);
+        $posts = Post::
+            /**join('users', 'author_id', '=', 'users.id')->*/
+            OrderBy('posts.created_at', 'desc')->paginate(6);
         return view('posts.index', compact('posts'));
     }
 
@@ -76,7 +78,9 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $post = Post::join('users', "author_id", '=', 'users.id')->find($id);
+        $post = Post::
+        /**join('users', "author_id", '=', 'users.-id')->*/
+        find($id);
         return view('posts.show', compact('post'));
     }
 

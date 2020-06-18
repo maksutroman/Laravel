@@ -173,7 +173,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li>
                   
-                        <li>             
+                        {{-- <li>             
                             <form class="formSearch"action="{{route('post.index')}}">
                     
                                 <div class="input-group">
@@ -193,10 +193,16 @@
                                 </div>
                
                             </form>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- End header -->
+
+
+
+
+
+    

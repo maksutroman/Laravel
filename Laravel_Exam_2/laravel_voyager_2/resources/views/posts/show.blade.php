@@ -1,6 +1,6 @@
  
   @include('blogheader')
-@include('titlebox')
+@include('posts/titleblogsingle')
  <div id="overviews" class="section wb">
         <div class="container">
             <div class="row"> 
