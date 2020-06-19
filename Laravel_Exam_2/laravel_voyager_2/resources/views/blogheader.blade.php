@@ -172,28 +172,17 @@
                     {!! menu('header-menu', 'myMenu') !!}
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Book Now</span></a></li>
-                  
-                        {{-- <li>             
-                            <form class="formSearch"action="{{route('post.index')}}">
-                    
-                                <div class="input-group">
-          
-                                    <input type="text" class="form-control" name="search"
-                
-                                    placeholder="Search"> <span class="input-group-btn">
-                
-                                        <button type="submit" class="btn btn-default">
-                 
-                                            Search
                
-                                        </button>
-                
-                                    </span>
+                        @if($_SERVER['REQUEST_URI'] == "/blog")
+                        <ul class="navbar-nav ml-auto">
+                            <form action={{route("post.index")}}>
     
-                                </div>
-               
-                            </form>
-                        </li> --}}
+                                    <li class="nav-item"><input class="form-control" type="text" placeholder="Search" aria-label="Search" name='search'></li>
+                                    <li class="nav-item"><button class="btn btn-warning" type="submit" >Search</button></li>
+                                  
+                             </form>	
+                        </ul>
+                        @endif
                     </ul>
                 </div>
             </div>

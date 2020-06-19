@@ -36,7 +36,7 @@
 							</p>
 						</div>
 						<div class="author-desc">
-							<img src="{{Voyager::image( $post->avatar ) ?? asset('images/author.jpg')}}" alt="about author">
+							<img src="{{ asset('images/author.jpg')}}" alt="about author">
 							<ul class="author-social">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
